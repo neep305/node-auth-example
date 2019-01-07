@@ -2,10 +2,9 @@
   "name": "auth-test",
   "version": "1.0.0",
   "description": "auth example",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec ./bin/www",
+    "test": "mocha",
+    "dev": "nodemon ./bin/www",
     "start": "babel-node ./bin/www"
   },
   "keywords": [
@@ -26,6 +25,7 @@
     "encodeurl": "~1.0.2",
     "escape-html": "~1.0.3",
     "etag": "~1.8.1",
+    "express": "^4.16.4",
     "finalhandler": "1.1.1",
     "fresh": "0.5.2",
     "merge-descriptors": "1.0.1",

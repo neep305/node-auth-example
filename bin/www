@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const App = require('../app');
+const app = require('../app');
 var debug = require('debug')('demo:server');
 var http = require('http');
 
@@ -16,7 +16,6 @@ mongoose.connect(config.mongodb.dsn, {useNewUrlParser: true}).then(() => {
   console.log('Successfully connected to Mongodb');
 });
 */
-const app = App();
 
 /**
  * Get port from environment and store in Express.

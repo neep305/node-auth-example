@@ -36,3 +36,4 @@ var users = {
     tj: { name: 'tj'}
 };
 
+module.exports = app;
