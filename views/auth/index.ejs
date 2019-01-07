@@ -4,8 +4,10 @@
 
 <h1>Login</h1>
 <%- message %>
-Try accessing <a href="/restricted">/restricted</a>, then authenticate with "tj" and "foobar".
-<form method="post" action="/login">
+return_url: <%= returl %><br>
+Try accessing <a href="/auth/restricted">/auth/restricted</a>, then authenticate with "admin" and "admin".
+<form method="post" action="/auth/login">
+  <input type="hidden" name="returl" value="<%= returl %>">  
   <p>
     <label>Username:</label>
     <input type="text" name="username">

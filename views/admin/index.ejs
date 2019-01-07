@@ -1,0 +1,20 @@
+
+<% var title = 'Admin' %>
+<% include ../head %>
+
+<h1>Admin</h1>
+<%- message %>
+
+<p><%- title %></p>
+
+<% if (user) { %>
+<p>
+  <label><%= user.name %></label>
+</p>
+<p>
+  <form method="get" action="/auth/logout">
+    <input type="submit" value="Logout">
+  </form>
+</p>
+<% } %>
+<% include ../foot %>
